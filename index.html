@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google search engine clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <!-- main portion  -->
+    <main>
+        <section class="search-engine">
+            <!-- icon of google  -->
+            <img src="https://www.google.co.in/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png" alt="logo of google">
+
+             <!-- search box -->
+            <div class="search-box">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <input type="text" id="query" autocomplete="off">
+                <div class="clear-btn--container">
+                     <button class="clear-btn" id="clear-btn">
+                        <i class="fa-solid fa-xmark"></i>
+                     </button>
+                </div>
+            </div>
+
+            <!-- search button and other button -->
+            <div class="buttons">
+                <button class="btn" onclick="redirector()">Google Search</button>
+                <button class="btn" onclick="location.href = 'https://doodles.google/'">I'm Feeling Lucky</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer portion  -->
+    <footer class="footer-section">
+        <div class="top-part"><p>India</p></div>
+        <div class="bottom-part">
+            <div class="first-nav">
+                <ul>
+                    <li><a href="https://about.google/?utm_source=google-IN&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a></li>
+                    <li><a href="https://ads.google.com/intl/en_in/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
+                    <li><a href="https://www.google.com/intl/en_in/business/">Business</a></li>
+                    <li><a href="https://www.google.com/search/howsearchworks/?fg=1">How Search Works</a></li>
+                </ul>
+            </div>
+
+            <div class="second-nav">
+                <ul>
+                    <li><a href="https://policies.google.com/privacy?hl=en-IN&fg=1">Privacy</a></li>
+                    <li><a href="https://policies.google.com/terms?hl=en-IN&fg=1">Terms</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script  -->
+    <script src="app.js"></script>
+</body>
+</html>
