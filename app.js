@@ -15,8 +15,8 @@ const handleClearBtnVisibility = () => {
 }
 
 const handleSearch = (e) => {
-    e.key === 'Enter' && redirector();
-  }
+    query.value!= 0 && e.key === 'Enter' && redirector();
+}
 
 // Add event listener for input field 
 query.addEventListener('input', handleClearBtnVisibility);
